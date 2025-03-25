@@ -18,10 +18,9 @@ const __dirname = path.resolve();
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(
-  cors({
-    origin: "https://project-chat-frontend-b5dmohrbi-b-xlls-projects.vercel.app",
-    credentials: true,
+app.use(cors({
+  origin: "https://project-chat-frontend.vercel.app",
+  credentials: true,
   /* cors({
     origin: "http://localhost:5173",
     credentials: true, */
